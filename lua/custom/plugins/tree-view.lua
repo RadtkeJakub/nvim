@@ -13,7 +13,7 @@ return {
 			view = {
 				-- float = {
 				-- 	enable = true,
-				-- 	open_win_config = function()
+				-- 	open_wswitch tabsin_config = function()
 				-- 		local screen_w = vim.opt.columns:get()
 				-- 		local screen_h = vim.opt.lines:get() - vim.opt.cmdheight:get()
 				-- 		local window_w = screen_w * WIDTH_RATIO
