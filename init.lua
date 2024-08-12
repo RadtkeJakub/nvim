@@ -775,6 +775,7 @@ require("lazy").setup({
 				"vimdoc",
 				"tsx",
 				"typescript",
+				"styled",
 			},
 			-- Autoinstall languages that are not installed
 			auto_install = true,
