@@ -553,7 +553,7 @@ require("lazy").setup({
 		lazy = false,
 		keys = {
 			{
-				"<leader>f",
+				"<leader>af",
 				function()
 					require("conform").format({ async = true, lsp_fallback = true })
 				end,
@@ -652,7 +652,7 @@ require("lazy").setup({
 					-- Accept ([y]es) the completion.
 					--  This will auto-import if your LSP supports it.
 					--  This will expand snippets if the LSP sent a snippet.
-					["<C-l>"] = cmp.mapping.confirm({ select = true }),
+					["<Tab>"] = cmp.mapping.confirm({ select = true }),
 
 					-- If you prefer more traditional completion keymaps,
 					-- you can uncomment the following lines
