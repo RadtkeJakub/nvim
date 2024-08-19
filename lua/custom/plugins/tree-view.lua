@@ -35,6 +35,7 @@ return {
 				-- width = function()
 				-- 	return math.floor(vim.opt.columns:get() * WIDTH_RATIO)
 				-- end,
+				adaptive_size = true,
 			},
 			actions = {
 				open_file = {
