@@ -12,9 +12,9 @@ vim.g.have_nerd_font = true
 -- Make line numbers default
 vim.opt.relativenumber = true
 vim.opt.number = true
--- You can also add relative line numbers, to help with jumping.
---  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+
+-- Remove cmd line height
+vim.opt.cmdheight = 0
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
@@ -67,7 +67,7 @@ vim.opt.inccommand = "split"
 vim.opt.cursorline = true
 
 -- Transparent Background
-vim.api.nvim_set_hl(0, "Normal", { guibg = NONE, ctermbg = NONE })
+-- vim.api.nvim_set_hl(0, "Normal", { guibg = NONE, ctermbg = NONE })
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 15
@@ -701,16 +701,16 @@ require("lazy").setup({
 		-- change the command in the config to whatever the name of that colorscheme is.
 		--
 		-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-		"navarasu/onedark.nvim",
+		"folke/tokyonight.nvim",
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		init = function()
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			vim.cmd.colorscheme("onedark")
+			vim.cmd.colorscheme("tokyonight-night")
 
 			-- You can configure highlights by doing something like:
-			vim.cmd.hi("Comment gui=none")
+			-- vim.cmd.hi("Comment gui=none")
 		end,
 	},
 
@@ -850,7 +850,7 @@ require("lazy").setup({
 })
 
 -- Transparent Background
-vim.api.nvim_set_hl(0, "Normal", { guibg = NONE, ctermbg = NONE })
-vim.api.nvim_set_hl(0, "NonText", { guibg = NONE, ctermbg = NONE })
+-- vim.api.nvim_set_hl(0, "Normal", { guibg = NONE, ctermbg = NONE })
+-- vim.api.nvim_set_hl(0, "NonText", { guibg = NONE, ctermbg = NONE })
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
